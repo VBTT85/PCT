@@ -1,0 +1,1108 @@
+* {
+    margin: 0;
+    padding: 0;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+               
+        /* Additional CSS for scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    /*---------HOME PAGE------------/
+      /*---------Contact Info------------/
+
+            /* Contact info styles */
+
+/* Existing CSS... */
+
+/* Contact info styles */
+.contact-info {
+    background-color: navy;
+    color: white;
+    padding: 10px 145px 10px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start; /* Align items to the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box; 
+    margin-right: 80px;
+}
+
+.contact-info span {
+    margin-left: 15px;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    font-size: 13px;
+}
+
+.contact-info .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+
+/* Home Page Header */
+.header {
+    min-height: 100vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)), url(Images/Hero\ 2.png);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+nav {
+    display: flex;
+    padding: 0.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    top: 40px;
+    left: 0;
+    width: 90%;
+    border-bottom: 2px solid #c78c06;
+}
+
+nav img {
+    width: 150px;
+    transition: width 0.3s ease;
+    margin-left: 30px;
+}
+
+nav img.shrink {
+    width: 100px;
+}
+
+.nav-links {
+margin-right: 80px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: navy;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c78c06;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+    font-weight: 600;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+    font-weight:500;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #fff;
+    background: #c78c06;
+    transition: 1s;
+}
+
+.hero-btn2 {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hero-btn2:hover {
+    border: 1px solid #fff;
+    background: darkblue;
+    transition: 1s;
+}
+
+.hero-btn1 {
+    display: inline-block;
+    text-decoration: none;
+    color: #c78c06;
+    border: 1px solid #c78c06;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hero-btn1:hover {
+    border: 1px solid #c78c06;
+    background: #c78c06;
+    transition: 1s;
+    color: #fff;
+}
+
+nav .fa {
+    display: none;
+}
+
+/*-------Animation---------*/
+
+/* Keyframes for animations */
+@keyframes slideFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial state for header animations */
+.animate-top, .animate-middle, .animate-bottom {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Specific animations for header elements */
+.animate-top.active {
+    animation: slideFromTop 1s ease-out forwards;
+}
+
+.animate-middle.active {
+    animation: slideFromBottom 1s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.animate-bottom.active {
+    animation: slideFromBottom 1s ease-out forwards;
+    animation-delay: 2s;
+}
+
+
+/* About-us section */
+.about-us {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.about-us h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: navy;
+}
+
+.about-us h3 {
+    color: navy;
+}
+.about-us p {
+    color: #234569;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-col {
+    flex-basis: 31%;
+    perspective: 1000px;
+    margin-bottom: 5%;
+    margin: 20px;
+    height: 330px;
+}
+    .about-col p {
+        color:#234569;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 12px;
+}
+
+.front {
+    background: #E7F6FF;
+}
+
+.back {
+    background: #B0E0E6;
+    transform: rotateY(180deg);
+}
+
+.about-col:hover .card {
+    transform: rotateY(180deg);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.icon {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto 10px; /* Center align the icons and add some margin below */
+}
+
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Stats Section */
+.stats-section {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stat {
+    flex-basis: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.stat .number {
+    font-size: 48px;
+    font-weight: 700;
+    color: #c78c06;
+}
+
+.stat .description {
+    font-size: 18px;
+    font-weight: 600;
+    color: navy;
+    margin-top: 10px;
+}
+
+/*---------services-----------*/
+
+.services {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+.services h1 {
+    margin-bottom: 0px;
+    font-size: 36px;
+    font-weight: 600;
+    color: navy;
+}
+
+
+.services-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    -webkit-text-fill-color: #fff;
+}
+
+.services-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(122, 130, 134, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26pt;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 40%;
+}
+
+.service-description {
+    width: 80%;
+    font-size: 14pt;
+    color: #fff;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.5s, bottom 0.5s;
+}
+
+.layer:hover .service-description {
+    opacity: 1;
+    bottom: 20%;
+}
+
+
+    /*--------Why Us-------*/
+
+/* Container for the Why-Us section with full width and background color */
+.Why-Us-container {
+    width: 100%;
+    background-color:#EFFBFF; /* Light blue background */
+    padding: 40px 0; /* Optional: Add padding to the top and bottom */
+}
+
+/* Ensure the Why-Us section has the same styling as the about-us section */
+.Why-Us {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0; /* Removed padding from here to avoid duplication with container padding */
+}
+
+.Why-Us h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: navy;
+    
+}
+
+/* Flexbox for the columns */
+.Whyus-row {
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    align-items: center; /* Center align vertically */
+    gap: 10px; /* Reduced space between columns */
+    flex-wrap: wrap; /* Wrap columns if needed for smaller screens */
+}
+
+.Whyus-col {
+    flex: 1; /* Make columns take equal width */
+    min-width: 200px; /* Ensure columns don't get too small */
+    padding: 0px; /* Add some padding */
+}
+
+.Whyus-col p {
+    font-size: larger;
+    text-align: left;
+}
+
+.Why-us-list {
+    list-style-type: disc; /* Use disc bullet points */
+    font-size: 14.5px;
+    text-align: justify; /* Align text to the left */
+    color: navy;
+}
+
+.Why-us-list li {
+    margin-bottom: 20px; /* Add space between list items */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.Whyus-col img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 700px) {
+    .Whyus-row {
+        flex-direction: column;
+    }
+}
+
+
+ /*--------call to action-------*/
+
+.cta{
+    margin: 20px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(Images/company.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    }
+
+ .cta h1{
+    color: white !important;
+      margin-bottom: 10px;
+      padding: 0;
+    }
+    
+    /*---------footer--------*/
+    .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    font-size: larger;
+    }
+    .footer h4{
+    margin-bottom: 25px;
+    margin-top: 5px;
+    font-weight:900;
+    font-size: larger;
+    color:#234569 ;
+    }
+
+.footer p{
+color: #234569;
+}
+    .icons .fa{
+      color: #1a43bf;
+      margin: 0 13px;
+      cursor: pointer;
+      padding: 18;
+    }
+    
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 16px;  /* Increase the width */
+    height: 25px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgrey;     
+}
+
+/* Darker scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+/* Even darker scrollbar thumb on active (when clicked) */
+::-webkit-scrollbar-thumb:active {
+    background: darkgrey;
+}
+
+
+    /*---------ABOUT US PAGE------------/
+
+    /*----------About Us Header
+
+    /* Home Page Header */
+
+    .Services-header {
+    min-height: 80vh;
+    width: 100%; 
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Images/a-truck\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+nav {
+    display: flex;
+    padding: 0.5% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    top: 40px;
+    left: 0;
+    width: 90%;
+    border-bottom: 2px solid #c78c06;
+}
+
+nav img {
+    width: 150px;
+    transition: width 0.3s ease;
+    margin-left: 30px;
+}
+
+nav img.shrink {
+    width: 100px;
+}
+
+.nav-links {
+margin-right: 80px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: navy;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #c78c06;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.hero-btn:hover {
+    border: 1px solid #fff;
+    background: #c78c06;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+/*-----Our Story------*/
+
+.Our-Story {
+
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 0; /* Removed padding from here to avoid duplication with container padding */
+    }
+    
+    .Our-Story h2 {
+        font-size: 36px;
+        font-weight: 600;
+        color: navy;
+    }
+    
+    /* Flexbox for the columns */
+
+    .Our-Story {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 0; /* Removed padding from here to avoid duplication with container padding */
+        margin-top: 70px;
+    }
+    
+    .Our-Story-Row {
+        display: flex;
+        justify-content: center; /* Center align horizontally */
+        align-items: center; /* Center align vertically */
+        gap: 20px; /* Reduced space between columns */
+        flex-wrap: wrap; /* Wrap columns if needed for smaller screens */
+    }
+    
+    .Our-Story-Col {
+        flex: 1; /* Make columns take equal width */
+        min-width: 200px; /* Ensure columns don't get too small */
+        padding: 20px; /* Add some padding */
+    }
+    
+    .Our-Story h2 {
+        font-size: 26px;
+        font-weight: 600;
+        color: navy;
+    }
+
+    .Our-Story-Col p {
+        font-size: larger;
+        text-align: justify;
+        font-size: 14px;
+        color: #234569;
+    }
+    
+    .Our-Story-Col img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+    
+
+
+    /*-------Vision Mission----*/
+
+    .Vision-Mission-container {
+        width: 100%;
+        background-color:#EFFBFF; /* Light blue background */
+        padding: 5px 0; /* Optional: Add padding to the top and bottom */
+        margin-top: 70px;
+    }
+    .Vision-Mission {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 0; /* Removed padding from here to avoid duplication with container padding */
+
+    }
+    
+    .Vision-Mission-Row {
+        display: flex;
+        justify-content: center; /* Center align horizontally */
+        align-items: center; /* Center align vertically */
+        gap: 20px; /* Reduced space between columns */
+        flex-wrap: wrap; /* Wrap columns if needed for smaller screens */
+    }
+    
+    .Vision-Mission-Col {
+        flex: 1; /* Make columns take equal width */
+        min-width: 200px; /* Ensure columns don't get too small */
+        padding: 20px; /* Add some padding */
+    }
+    
+    .Vision-Mission h2 {
+        font-size: 26px;
+        font-weight: 600;
+        color: navy;
+    }
+
+    .Vision-Mission-Col p {
+        font-size: larger;
+        text-align: justify;
+        font-size: 14px;
+        color: #234569;
+    }
+    
+    .Vision-Mission img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .bold-text1 {
+        font-weight: bold;
+    }
+    /*--------Services------*/
+
+    .Values {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    h2 {
+        font-size: 26px;
+        font-weight: 600;
+        color: navy;
+    }
+
+    .Values h3 {
+        color: white;
+    }
+    
+    .Values p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    
+    .Values-Row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; /* Ensure columns wrap if there's not enough space */
+    }
+    
+    .values-col {
+        flex-basis: calc(33.33% - 40px); /* Calculate width to include margin */
+        background: navy;
+        border-radius: 10px;
+        margin: 20px; /* Margin around each column */
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    
+    h3 {
+        text-align: center;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    
+    .values-col:hover {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Center-align the last two columns */
+    .values-col:nth-last-child(-n+2) {
+        flex-basis: calc(50% - 40px); /* Each column will take up half of the remaining width */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Keyframes for a more prominent fade-in and slide-up animation */
+@keyframes revealAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*---------WhyUs2-------------*/
+
+.Why-Us2 {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.Why-Us2 h1 {
+    font-size: 26px;
+    font-weight: 600;
+    color: navy;
+    margin: 0px;
+}
+
+.Why-Us2 h3 {
+    color: navy;
+    font-size: 18px; /* Set a consistent font size for all h3 elements */
+    margin: 0px;
+}
+
+p {
+    color: navy;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.Why-Us2-Row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure columns wrap if there's not enough space */
+}
+
+.Why-Us2-col {
+    flex-basis: calc(33.33% - 40px); /* Ensure all columns have the same basis */
+    background: #EFFBFF; 
+    border-radius: 10px;
+    margin: 20px; /* Margin around each column */
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+
+.Why-Us2-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove or comment out the rule below if you want all columns to be the same size */
+/*
+.Why-Us2-col:nth-last-child(-n+2) {
+    flex-basis: calc(50% - 40px); 
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+/* Keyframes for a more prominent fade-in and slide-up animation */
+@keyframes revealAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Initial state for reveal elements */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Active state with the animation */
+.reveal.active {
+    animation: revealAnimation 1s ease-out forwards;
+}
+
+/*---------Contact Us Page-------*/
+
+.contact-us {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-us .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-us .contact-col {
+  flex: 1;
+  min-width: 250px; /* Adjust this value as needed */
+  margin: 20px 10px; /* Adjust spacing as needed */
+}
+
+.contact-us .contact-col div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Adjust spacing between items */
+}
+
+.contact-us .contact-col div i {
+  font-size: 24px; /* Adjust icon size as needed */
+  margin-right: 15px; /* Space between icon and text */
+}
+
+.contact-us .contact-col div span h3 {
+  margin: 0;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+.contact-us .contact-col div span p {
+  margin: 5px 0 0;
+  font-size: 14px; /* Adjust font size as needed */
+  color: #555; /* Adjust text color as needed */
+}
+
+
+.contact-col {
+flex-basis: 48%;
+margin-bottom: 30px;
+}
+
+.contact-col div{
+display: flex;
+align-items: center;
+margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+font-size: 28px;
+color:#c78c06;
+margin: 10px;
+margin-right: 30px;
+
+}
+
+.contact-col div p{
+  padding: 0;
+}
+  .contact-col div p{
+    font-size:20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+  }
+
+  .contact-col input, .contact-col textarea{
+width: 100%;
+padding: 15px;
+margin-bottom: 17px;
+outline: none;
+border: solid #ccc;
+
+  }

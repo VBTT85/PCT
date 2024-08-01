@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PCP Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="contact-info" id="contactInfo">
+        <span><img src="Images/phone.png" alt="Phone Icon" class="icon"> +27 76 666 9000</span>
+        <span><img src="Images/mail.png" alt="Email Icon" class="icon"> mmokgokong@pothinuscarl.co.za</span>
+        <span>
+            <a href="https://www.linkedin.com/in/thato-matsiri-mokgokong-665a2116/" target="_blank">
+                <img src="Images/linkedin.png" alt="Linkedin Icon" class="icon">
+            </a>
+            <a href="" target="_blank">
+                <img src="Images/fb.png" alt="Facebook Icon" class="icon">
+            </a>
+        </span>
+    </div>
+    <section class="header">
+        <nav>
+            <a href="Home.html"><img src="Images/Logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Home.html" class="active">HOME</a></li>
+                    <li><a href="About Us.html">ABOUT US</a></li>
+                    <li><a href="Services.html">SERVICES</a></li>
+                    <li><a href="Contact Us.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1 class="animate-top">Your Logistics Champions</h1>
+            <p class="animate-middle">We take care of all of your transport needs hassle free so you can focus on your core business.<br>No matter your needs, we've got you covered</p>
+            <a href="Contact Us.html" class="hero-btn animate-bottom">Learn More</a>
+            <a href="" class="hero-btn2 animate-bottom">Contact Us</a>
+        </div>        
+    </section>
+
+    <!-------------About Us------------->
+    <section class="about-us reveal">
+        <h1>About Us</h1>
+        <p>Pothinus Carl Projects is a 100% black owned transportation company that was established in 2014. We provide transportation services that can help you and all our clients meet the needs of your customers on time. The founders of Pothinus Carl Projects have a combined experience of 25 years in providing on time transportation services in the telecommunications industry and are expanding the company portfolio into other industries such as mining, oil & gas and more. All our services are customised to your individual or organisational needs. Our management team works with you to make sure you get the service you are looking for to meet your business goals.</p>
+        
+        <div class="row">
+            <div class="about-col">
+                <div class="card">
+                    <div class="front">
+                        <img src="images/truck-2-xxl.png" alt="Fleet Icon" class="icon">
+                        <h3>OUR FLEET</h3>
+                        <p>Pothinus Carl Projects owns a number of vehicles and trailers to transport your cargo/goods to their destination, safely and without any damages. Our vehicles are serviced by accredited providers 3 times a year and are safe to operate at all times. The members of our staff personally check wheel alignment and inspect each vehicle before it departs with its cargo.</p>
+                    </div>
+                    <div class="back">
+                        <h3>More About OUR FLEET</h3>
+                        <p>Additional information about our fleet, maintenance schedules, and safety protocols.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-col">
+                <div class="card">
+                    <div class="front">
+                        <img src="images/conference-xxl.png" alt="Drivers Icon" class="icon">
+                        <h3>OUR DRIVERS</h3>
+                        <p>Our drivers are licensed and have extensive experience navigating different routes and terrains in Gauteng. All drivers are trained to perform on the job with the right attitude, awareness and skills to be safe while driving, and to avoid life threatening situations.</p>
+                    </div>
+                    <div class="back">
+                        <h3>More About OUR DRIVERS</h3>
+                        <p>Additional information about driver training, certifications, and safety records.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-col">
+                <div class="card">
+                    <div class="front">
+                        <img src="images/check-mark-8-xxl.png" alt="Value Adds Icon" class="icon">
+                        <h3>OUR VALUE ADDS</h3>
+                        <p>Among our core values are loyalty, trust and honesty and it is through these that we have build relationships with our clients. We are not just service providers, but also partners who collaborate and work with you to help you achieve a winning outcome. We are proud that we can tailor our services to your specific needs.</p>
+                    </div>
+                    <div class="back">
+                        <h3>More About OUR VALUE ADDS</h3>
+                        <p>Additional information about our values, client partnerships, and tailored services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--------------Stats Section-------------->
+    <section class="stats-section reveal">
+        <div class="stats">
+            <div class="stat">
+                <p><span class="number" data-target="19">0</span>+</p>
+                <p class="description">Years in service</p>
+            </div>
+            <div class="stat">
+                <p><span class="number" data-target="50">0</span>+</p>
+                <p class="description">Years combined driver experience</p>
+            </div>
+            <div class="stat">
+                <p><span class="number" data-target="200">0</span>+</p>
+                <p class="description">Trips undertaken</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----------Services---------->
+    <section class="services reveal">
+        <h1>Our Services</h1>
+        <p>We offer a wide range of services that we can tailor to suit your needs</p>
+        
+        <div class="row">
+            <div class="services-col">
+                <img src="Images/Transport Service.jpg">
+                <div class="layer">
+                    <h3>Freight and Logistics</h3>
+                    <p class="service-description">Ensuring seamless and efficient movement of goods across various sectors and regions, including door-to-door deliveries.</p>
+                </div>
+            </div>
+            <div class="services-col">
+                <img src="Images/Courier2.jpg">
+                <div class="layer">
+                    <h3>Specialized Transport</h3>
+                    <p class="service-description">Catering to unique transportation needs, such as oversized loads, hazardous materials, and time-sensitive deliveries.</p>
+                </div>
+            </div>
+            <div class="services-col">
+                <img src="Images/E Commerce.jpg">
+                <div class="layer">
+                    <h3>Passenger Transport</h3>
+                    <p class="service-description">Providing a variety of moving and storage solutions for individuals and families.</p>
+                </div>
+            </div>
+        </div> 
+    </section>    
+
+        <!-----------Why Us---------->
+
+        <section class="Why-Us2 reaveal">
+            <h1>Why Choose Us?</h1>
+            <div class="Why-Us2-Row reveal">
+                <div class="Why-Us2-col">
+                    <span style="font-size: 3em; color: navy;">
+                    <i class="fa fa-hourglass" aria-hidden="true"></i>
+                </span>
+                    <h3>Comprehensive Door-to-Door Deliveries</h3>
+                    <p>We ensure seamless and efficient transportation of your goods from pickup to delivery, providing end-to-end solutions tailored to your needs.</p>
+                </div>
+                <div class="Why-Us2-col">
+                    <span style="font-size: 3em; color: navy;">
+                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                    </span>
+                    <h3>Expert Handling of Hazardous Materials</h3>
+                    <p>We strive for excellence in every aspect of our business, from service delivery to customer interactions.</p>
+                </div>
+                <div class="Why-Us2-col">
+                    <span style="font-size: 3em; color: navy;">
+                    <i class="fa fa-check-square" aria-hidden="true"></i>
+                </span>
+                    <h3>Reliable Moving Services</h3>
+                    <p>We embrace innovation to continuously improve our services and adapt to changing market needs.</p>
+                </div>
+                <div class="Why-Us2-col">
+                    <span style="font-size: 3em; color: navy;">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <h3>Hands-On Ownership</h3>
+                </span>
+                    <p>We are committed to sustainable practices that minimize our environmental impact and contribute to a greener future.</p>
+                </div>
+                <div class="Why-Us2-col">
+                    <span style="font-size: 3em; color: navy;">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <h3>Exceptional Customer Service</h3>
+                </span>
+                    <p>As a 100% black-owned company, we are dedicated to empowering our community through job creation, skills development, and supporting local businesses.</p>
+                </div>
+                <div class="Why-Us2-col">
+                    <span style="font-size: 3em; color: navy;">
+                    <i class="fa fa-handshake-o" aria-hidden="true"></i>
+                </span>
+                    <h3>Proven Track Record of Reliability</h3>
+
+                    <p>As a 100% black-owned company, we are dedicated to empowering our community through job creation, skills development, and supporting local businesses.</p>
+                </div>
+            </div>
+    
+    <!----------Call to action---------->
+    
+    <section class="cta reveal">
+        <h1>Enquire About our Logistics Services</h1>
+        <a href="Contact Us.html" class="hero-btn">ENQUIRE NOW</a>
+    </section>
+
+    <!----------Footer---------->
+    <section class="footer">
+        <h4>Contact Information</h4>
+        <p>63 Falcon Heights | Mooikloof Ridge | Tel: +27 76 666 9000 | Email: info@pothinuscarl.co.za </p>
+        <p>Level 1 BBBEEE Value Added Contributor </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-------------Script------------->
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                } else {
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        function animateNumbers() {
+            const counters = document.querySelectorAll('.number');
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / (60000 / 60); // 5000ms / 60fps
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            const logo = document.querySelector('nav img');
+            if (window.scrollY > 0) {
+                logo.classList.add('shrink');
+            } else {
+                logo.classList.remove('shrink');
+            }
+
+            // Trigger number animation on scroll
+            if (document.querySelector('.stats-section').getBoundingClientRect().top < window.innerHeight) {
+                animateNumbers();
+            }
+        });
+
+        window.addEventListener('scroll', reveal);
+
+        
+    </script>
+
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('.animate-top').classList.add('active');
+        document.querySelector('.animate-middle').classList.add('active');
+        document.querySelectorAll('.animate-bottom').forEach(element => {
+            element.classList.add('active');
+        });
+    });
+</script>
+
+</body>
+</html>

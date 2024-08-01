@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            /* Keyframes for a more prominent fade-in and slide-up animation */
+            @keyframes revealAnimation {
+                from {
+                    opacity: 0;
+                    transform: translateY(50px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            /* Initial state for reveal elements */
+            .reveal {
+                opacity: 0;
+                transform: translateY(50px);
+                transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            }
+
+            /* Active state with the animation */
+            .reveal.active {
+                animation: revealAnimation 1s ease-out forwards;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contact-info" id="contactInfo">
+            <span><img src="Images/phone.png" alt="Phone Icon" class="icon"> +27 76 666 9000</span>
+            <span><img src="Images/mail.png" alt="Email Icon" class="icon"> mmokgokong@pothinuscarl.co.za</span>
+            <span>
+                <a href="https://www.linkedin.com/in/thato-matsiri-mokgokong-665a2116/" target="_blank">
+                    <img src="Images/linkedin.png" alt="Linkedin Icon" class="icon">
+                </a>
+                <a href="" target="_blank">
+                    <img src="Images/fb.png" alt="Facebook Icon" class="icon">
+                </a>
+            </span>
+        </div>
+        <section class="Services-header">
+            <nav>
+                <a href="Home.html"><img src="Images/Logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Home.html">HOME</a></li>
+                        <li><a href="About Us.html">ABOUT US</a></li>
+                        <li><a href="Services.html">SERVICES</a></li>
+                        <li><a href="Contact Us.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Your Logistics Champions</h1>
+                <p>We take care of all of your transport needs hassle free so you can focus on your core business.<br>No matter your needs, we've got you covered</p>
+                <a href="Contact Us.html" class="hero-btn">Contact Us</a>
+            </div>
+        </section>
+    
+        <!------------Our Story-->
+        <section class="Our-Story reveal">
+            <div class="Our-Story-Row">
+                <div class="Our-Story-Col">
+                    <img src="Images/Worker4.png">
+                </div>
+                <div class="Our-Story-Col">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2014, Pothinus Carl Projects is a proudly 100% black-owned transportation company committed to providing reliable, efficient, affordable and innovative transport solutions throughout South Africa. Since our inception, we have experienced rapid growth, particularly within the telecommunications, mining, and oil & gas industries, among other industries we have partnered with.</p>
+                    <br>
+                    <p>What distinguishes Pothinus Carl Projects is our dedication to building long-term partnerships founded on reliable, responsive, affordable, safe, and world-class service, along with our capability to create customized service offerings tailored to each client's unique needs. Regardless of the logistical requirements, the size of the business, or location, we are proud to provide our clients with robust, reliable, and customized solutions.</p>    
+                </div>
+            </div>
+        </section>
+
+        <!------------Our Vision, Mission, Values-->
+        <section class="Vision-Mission-container reveal">
+            <div class="Vision-Mission">
+                <div class="Vision-Mission-Row">
+                    <div class="Vision-Mission-Col">
+                        <h2>Vision and Mission</h2>
+                        <p><span class="bold-text1">Vision:</span> To become one of the leading transportation companies recognized for our commitment to excellence, innovation, and empowerment.</p>
+                        <p><span class="bold-text1">Mission</span> To provide top-tier transportation solutions that exceed our clients' expectations.</p>
+                    </div>   
+                    <div class="Vision-Mission-Col">
+                        <img src="Images/Worker2.png">
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <!---------Our Values-->
+        <section class="Values reveal">
+            <h2>Our Core Values</h2>
+            <div class="Values-Row">
+                <div class="values-col">
+                    <h3>INTEGRITY</h3>
+                    <p>We uphold the highest standards of honesty and accountability in all our operations.</p>
+                </div>
+                <div class="values-col">
+                    <h3>EXCELLENCE</h3>
+                    <p>We strive for excellence in every aspect of our business, from service delivery to customer interactions.</p>
+                </div>
+                <div class="values-col">
+                    <h3>INNOVATION</h3>
+                    <p>We embrace innovation to continuously improve our services and adapt to changing market needs.</p>
+                </div>
+                <div class="values-col">
+                    <h3>SUSTAINABILITY</h3>
+                    <p>We are committed to sustainable practices that minimize our environmental impact and contribute to a greener future.</p>
+                </div>
+                <div class="values-col">
+                    <h3>EMPOWERMENT</h3>
+                    <p>As a 100% black-owned company, we are dedicated to empowering our community through job creation, skills development, and supporting local businesses.</p>
+                </div>
+            </div>
+        </section>
+
+
+            <!----------Call to action---------->
+    <section class="cta reveal">
+        <h1> Enquire About our Logistics Services</h1>
+        <a href="Contact Us.html" class="hero-btn">ENQUIRE NOW</a>
+    </section>
+
+        <!----------Footer---------->
+        <section class="footer">
+            <h4>Contact Information</h4>
+            <p>63 Falcon Heights | Mooikloof Ridge | Tel: +27 76 666 9000 | Email: info@pothinuscarl.co.za </p>
+            <p>Level 1 BBBEEE Value Added Contributor</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </section>
+
+        <!-------------Script------------->
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll('.reveal');
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add('active');
+                    } else {
+                        reveals[i].classList.remove('active');
+                    }
+                }
+            }
+
+            function animateNumbers() {
+                const counters = document.querySelectorAll('.number');
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const increment = target / (60000 / 60); // 5000ms / 60fps
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + increment);
+                            requestAnimationFrame(updateCount);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            }
+
+            window.addEventListener('scroll', function() {
+                const logo = document.querySelector('nav img');
+                if (window.scrollY > 0) {
+                    logo.classList.add('shrink');
+                } else {
+                    logo.classList.remove('shrink');
+                }
+
+                // Trigger number animation on scroll
+                if (document.querySelector('.stats-section').getBoundingClientRect().top < window.innerHeight) {
+                    animateNumbers();
+                }
+            });
+
+            window.addEventListener('scroll', reveal);
+        </script>
+    </body>
+</html>
